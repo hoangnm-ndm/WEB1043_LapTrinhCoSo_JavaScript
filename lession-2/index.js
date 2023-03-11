@@ -1,4 +1,4 @@
-console.log("lession 2");
+// console.log("lession 2");
 
 /**
  * Biến var:
@@ -6,21 +6,21 @@ console.log("lession 2");
  * 2. Gán lại được
  * 3. Gọi trước khi gán trị thì sẽ nhận kết quả là "undefined"
  */
-console.log(myBox);
-{
-  {
-    {
-      {
-        {
-          {
-            var myBox = "apple";
-          }
-        }
-      }
-    }
-  }
-}
-console.log(myBox);
+// console.log(myBox);
+// {
+//   {
+//     {
+//       {
+//         {
+//           {
+//             var myBox = "apple";
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// console.log(myBox);
 
 // var có thể khai bảo lại
 // var myBox = "banana";
@@ -39,14 +39,14 @@ console.log(myBox);
  */
 // console.log(myAge);
 
-let myAge = 32;
-// global-scope
-{
-  // block-scope
-  console.log(myAge);
-  // let myAge = 33;
-}
-console.log(myAge);
+// let myAge = 32;
+// // global-scope
+// {
+//   // block-scope
+//   console.log(myAge);
+//   // let myAge = 33;
+// }
+// console.log(myAge);
 
 /**
  * const: (constant)
@@ -56,18 +56,18 @@ console.log(myAge);
  * 4. Có phạm vi sử dụng là block-scope
  */
 // console.log(myID);
-{
-  {
-    {
-      {
-        {
-          const myID = "011234567890";
-          // console.log(myID);
-        }
-      }
-    }
-  }
-}
+// {
+//   {
+//     {
+//       {
+//         {
+//           const myID = "011234567890";
+//           // console.log(myID);
+//         }
+//       }
+//     }
+//   }
+// }
 // const myID = "4567895678";
 // myID = "2345678";
 
@@ -131,14 +131,35 @@ console.log(myAge);
 
 // console.log("Ket qua cua menh de: ", myNumber % 2 === 0);
 
-const myArray = [1, 2, 3, 4];
-const newArray = myArray;
-newArray.push(100);
-console.log("myArray: ", myArray);
-console.log("newArray: ", newArray);
+// const myArray = [1, 2, 3, 4];
+// const newArray = myArray;
+// newArray.push(100);
+// console.log("myArray: ", myArray);
+// console.log("newArray: ", newArray);
 
 // BTVN:
 /**
  * 1. Tim hieu ve ham và viết 1 hàm kiểm tra xem một số có phải là số chẵn hay không?
  * 2. Tìm hiểu object và viết một object có tên là myInfor chứa: name, age, msv, email
  */
+
+function kiemTraSoChan(number) {
+  if (number % 2 === 0) {
+    // return true;
+    console.log(`${number} là một số chẵn`);
+  } else {
+    // return false;
+    console.log(`${number} không là một số chẵn`);
+  }
+}
+
+const myInfor = {
+  name: "Dam Dinh Dung",
+  age: 19,
+  msv: "PH8900",
+};
+
+console.log(myInfor.name);
+
+console.log(Object.keys(myInfor));
+console.log(Object.values(myInfor));
