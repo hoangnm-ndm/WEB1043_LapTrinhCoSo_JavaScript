@@ -58,18 +58,18 @@
 // console.log(Object.keys(myInfor));
 // console.log(Object.values(myInfor));
 
-const myStudent = ["Chi", "Hieu", "Khoa", "Thang"];
-for (let i = 0; i < myStudent.length; i++) {
-  console.log(`Thay xin chao ban ${myStudent[i]}`);
-}
-let i = 0;
-for (;;) {
-  if (i >= myStudent.length) {
-    break;
-  }
-  console.log(`Thay xin chao ban ${myStudent[i]}`);
-  i++;
-}
+// const myStudent = ["Chi", "Hieu", "Khoa", "Thang"];
+// for (let i = 0; i < myStudent.length; i++) {
+//   console.log(`Thay xin chao ban ${myStudent[i]}`);
+// }
+// let i = 0;
+// for (;;) {
+//   if (i >= myStudent.length) {
+//     break;
+//   }
+//   console.log(`Thay xin chao ban ${myStudent[i]}`);
+//   i++;
+// }
 
 /**
  * for(MD1; MD2; MD3) {
@@ -84,5 +84,36 @@ for (;;) {
 /**
  * Tạo một mảng chứa các object là các thông tin của sinh viên bao gồm: name, address.
  * Dùng vòng lặp for in ra lời chào: "Xin chào bạn <name> đến từ <address>"
- *
  */
+
+const myClass = [
+  { name: "Quoc Tri", add: "HN" },
+  { name: "Batman", add: "Vuong Quoc Anh" },
+  { name: "Hoang Hai", add: "Binh Duong" },
+  { name: "Nguyen Phuong Hang", add: "Binh Duong" },
+  { name: "Messi", add: "Bo Dao Nha" },
+  { name: "CR7", add: "Mỹ Đình" },
+];
+
+for (i = 0; i < myClass.length; i++) {
+  console.log(`Xin chào ${myClass[i].name} đến từ ${myClass[i].add}`);
+}
+/**
+ * Làm một vòng lặp for in ra hình tam giác với mỗi hàng tăng thêm 1 dấu "#"
+ * Làm lại bài toán trên dưới dạng hàm inTamGiac("Ký tự muốn in", "số dòng muốn in")
+ */
+// #
+// ##
+// ###
+// ####
+
+for (let i = 0; i < 4; i++) {
+  // code intamgiac
+}
+
+// inTamGiac("h", 4);
+
+// h
+// hh
+// hhh
+// hhhh
