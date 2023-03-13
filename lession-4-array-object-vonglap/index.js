@@ -59,3 +59,72 @@
 // console.log(Object.keys(myInfor).length);
 // console.log(Object.values(myInfor));
 // console.log(myInfor.length);
+
+/**
+ * for
+ */
+
+// const myStudent2 = ["Hoang", "Cuong", "Dung", "Duyen", "Cuong", "Hai"];
+// let i = 0;
+// for (;;) {
+//   if (i >= myStudent2.length) {
+//     break;
+//   }
+//   console.log(`Xin chao ban ${myStudent2[i]}`);
+//   i++;
+// }
+
+// let myString = "Hello World!";
+// for (let i = 0; i < myString.length; i++) {
+//   console.log(myString[i]);
+// }
+
+// const myInfor = {
+//   myName: "HoangNM",
+//   "my phone": "073547271",
+//   address: "HN",
+//   server: "TraiDat",
+//   mail: "hoangm62@fpt.edu.vn",
+//   gender: null,
+// };
+/** Tao ra mot array co 3 objec chu thong tin cac ban cua minh.
+ * In ra loi chao `Xin chao ban "name" den tu "address"`
+ */
+
+// const user = [
+//   {
+//     myName: "Hieu",
+//     address: "Lao Cai",
+//   },
+//   {
+//     myName: "Nam",
+//     address: "Ha Noi",
+//   },
+//   {
+//     myName: "Trung",
+//     address: "Ha Noi",
+//   },
+// ];
+
+// for (i; i < user.length; i++) {
+//   console.log(`Xin chao ban ${user[i].myName} den tu ${user[i].address}!!!!`);
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+let i = 100;
+while (i < 10) {
+  console.log(i);
+  // Có những nhiệm vụ tác động đến bước nhảy -> không biết chắc số lần lặp
+  i++;
+}
+/**
+ * While có thể được sử dụng khi chúng ta chưa biết rõ số lần lặp(đặt tính của bước nhảy)
+ */
+
+do {
+  // code to be executed if the condition is true
+  console.log(i);
+} while (i < 10);
