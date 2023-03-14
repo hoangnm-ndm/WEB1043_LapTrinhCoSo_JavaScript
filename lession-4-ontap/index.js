@@ -87,7 +87,8 @@ const myStudent2 = [
     address: "Mỹ Tho",
   },
 ];
-
-// for() {
-
-// }
+for (i = 0; i < myStudent2.length; i++) {
+  console.log(
+    `Xin chào bạn ${myStudent2[i].name} đến từ ${myStudent2[i].address}`
+  );
+}
