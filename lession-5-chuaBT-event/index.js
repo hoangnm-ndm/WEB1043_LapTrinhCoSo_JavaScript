@@ -29,6 +29,8 @@ const thongTinPhutGoi = [
   {
     name: "Hoang",
     phut: 100,
+    phone: "22345678",
+    address: "HD - HN",
   },
   {
     name: "Chi",
@@ -51,3 +53,53 @@ const thongTinPhutGoi = [
 for (let i = 0; i < thongTinPhutGoi.length; i++) {
   tinhTienDienThoai(thongTinPhutGoi[i].name, thongTinPhutGoi[i].phut);
 }
+
+// Bài : 2
+// 1. Viết function Javascript ⇒ tính tổng các số chẵn từ 1 tới n (Gợi ý sử dụng vòng lặp).
+
+function tinhTongSoChan(n) {
+  let tongSoChan = 0;
+  for (i = 1; i <= n; i++) {
+    if (i % 2 === 0) {
+      tongSoChan += i;
+    }
+  }
+  return tongSoChan;
+}
+
+/**
+ * Bài 3: 
+Viết một function có tên veTamGiac()
+Nhập vào một ký tự và một số bất kỳ, in ra màn hình theo định dạng sau:
+veTamGiac(“#”,4);
+#
+## 
+### 
+####
+ */
+
+function veTamGiac(kyTu, number) {
+  let s = "";
+  for (i = 1; i < number; i++) {
+    s += kyTu;
+    console.log(s);
+  }
+}
+
+veTamGiac("#", 4);
+veTamGiac("H", 7);
+
+/*Viết một Function chèn phần tử vào một vị trí bất kỳ trong mảng
+Ví dụ: 
+function insert(myArray,index,”newItem”)
+*/
+
+const myArray = [1, 2, 3, 4, 5];
+// const myArray2 = [1, 2, 3, 100, 4, 5];
+
+function myInsert(myArray, index, item) {
+  myArray.splice(index, 0, item);
+}
+
+myInsert(myArray, 2, 100);
+console.log(myArray);
