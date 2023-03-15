@@ -76,7 +76,7 @@ veTamGiac(“#”,4);
 ## 
 ### 
 ####
- */
+*/
 
 function veTamGiac(kyTu, number) {
   let s = "";
