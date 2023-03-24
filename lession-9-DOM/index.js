@@ -37,5 +37,13 @@ console.log(h2Element);
 const myLink = document.querySelector("ol#myList > li.item > a.myLink");
 console.log(myLink);
 
-const listLanguages = document.querySelectorAll("ol > li > a.languageItem");
+// const listLanguages = document.querySelectorAll("ol > li > a.languageItem");
+// console.log(listLanguages)
+
+const listLanguages = document.querySelector("ol.languagesList");
 console.log(listLanguages);
+
+console.log(listLanguages[1]);
+// Slide 5 trang 19
+
+// BTVN: đọc và làm các ví dụ từ trang 19 đến hết trong slide 5
