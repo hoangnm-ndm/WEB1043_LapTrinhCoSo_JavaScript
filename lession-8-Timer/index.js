@@ -47,3 +47,9 @@
 // setTimeout(function () {
 //   location.reload();
 // }, 1000);
+
+const myInterval = setInterval(function () {
+  console.log("cong viec 1");
+}, 0);
+
+clearInterval(myInterval);
