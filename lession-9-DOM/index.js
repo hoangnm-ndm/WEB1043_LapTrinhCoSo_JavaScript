@@ -43,7 +43,7 @@ console.log(myLink);
 const listLanguages = document.querySelector("ol.languagesList");
 console.log(listLanguages);
 
-console.log(listLanguages[1]);
+console.log(listLanguages.querySelector(".item2"));
 // Slide 5 trang 19
 
 // BTVN: đọc và làm các ví dụ từ trang 19 đến hết trong slide 5
