@@ -20,19 +20,22 @@
 // document.write("port: " + location.port + "<br>");
 // document.write("protocol: " + location.protocol + "<br>");
 
-// console.log("Công việc 1");
-// const abc = setInterval(function () {
-//   console.log("Công việc 2");
-// }, 1000);
-// console.log("Công việc 3");
+console.log("Công việc 1");
+const myInterval = setInterval(function () {
+  console.log("Công việc 2");
+}, 1000);
+console.log("Công việc 3");
+function donDep() {
+  clearInterval(myInterval);
+}
 
 // clearInterval(abc);
 
-var now = new Date();
-var h = now.getHours();
-var m = now.getMinutes();
-var s = now.getSeconds();
-document.write(`${h}:${m}:${s}`);
-setTimeout(function () {
-  location.reload();
-}, 1000);
+// var now = new Date();
+// var h = now.getHours();
+// var m = now.getMinutes();
+// var s = now.getSeconds();
+// document.write(`${h}:${m}:${s}`);
+// setTimeout(function () {
+//   location.reload();
+// }, 1000);
