@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân!</title>
+  </head>
+  <body>
+    <button onclick="darkMode()">DarkMode</button>
+    <h1>Welcome here!!!</h1>
+    <h2>My name is HoangNguyen</h2>
+    <h2>About</h2>
+    <p>
+      Tôi là một giảng viên đang công tác tại FPoly, với sở thích chia sẻ kiến
+      thức lập trình cho mọi người. Tôi luôn thấy vui vẻ khi được tiếp xúc với
+      các sinh viên.
+    </p>
+    <h2>Skills</h2>
+
+    <h3>Tôi có khả năng code những ngôn ngữ:</h3>
+    <ol>
+      <li>C++</li>
+      <li>PHP</li>
+      <li>Ruby</li>
+      <li>Rust</li>
+      <li>Golang</li>
+      <li>JS</li>
+      <li>Python</li>
+    </ol>
+
+    <script>
+      const bodyElement = document.getElementsByTagName("body")[0];
+      function darkMode() {
+        (bodyElement.style.color = "#ccc"),
+          (bodyElement.style.backgroundColor = "black");
+      }
+    </script>
+  </body>
+</html>

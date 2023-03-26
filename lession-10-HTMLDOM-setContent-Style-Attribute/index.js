@@ -1,28 +1,3 @@
-const myDocument = {
-  html: {
-    head: {
-      title: {
-        innerText: "Tên trang web",
-      },
-      link: {
-        href: "./style.css",
-      },
-    },
-
-    body: {
-      h2: {
-        innerText: "DOM",
-      },
-      ol: {
-        li: {},
-        li: {},
-        li: {},
-        li: {},
-      },
-    },
-  },
-};
-
 // console.log(myDocument);
 const h2ElementbyID = document.getElementById("title");
 const h2ElementsByClass = document.getElementsByClassName("title");
@@ -35,3 +10,7 @@ const contentItem2 = document.querySelector(".contentItem.item2");
 // console.log(contentItemQuery);
 // console.log(contentItem2);
 // BTVN: Đọc slide 5 từ trang 18 đến hết và code lại code mẫu.
+const olElement = document.querySelector("ol.contentList");
+console.log(olElement);
+
+console.log(olElement.getElementsByClassName("item3")[0]);

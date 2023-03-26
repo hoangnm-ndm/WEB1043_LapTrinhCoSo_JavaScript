@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    <img
+      id="myImg"
+      alt="Flower"
+      src="https://fakeimg.pl/250x100/"
+      width="150"
+      height="113"
+    /> -->
+
+    <!-- <p>The attributes of the image are:</p>
+    <p id="demo">
+      Noi dung cua the p thoi diem truoc khi gan
+    </p> -->
+
+    <!-- <script>
+      const nodeMap = document.getElementById("myImg").attributes;
+      let text = "";
+      for (let i = 0; i < nodeMap.length; i++) {
+        text += nodeMap[i].name + " = " + nodeMap[i].value + "<br>";
+      }
+      setTimeout(() => {
+        document.getElementById("demo").innerHTML = text;
+      }, 3000);
+    </script> -->
+
+    <h2 id="welcome">Chào cả lớp!</h2>
+    <button onclick="goodbye()">Hết giờ</button>
+    <button onclick="changeColor()">Đổi màu</button>
+    <script>
+      const welcomeElement = document.getElementById("welcome");
+      function goodbye() {
+        welcomeElement.innerHTML = "Tam biet!";
+      }
+
+      function changeColor() {
+        welcomeElement.style.color = "red";
+        welcomeElement.style.backgroundColor = "blue";
+      }
+    </script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
