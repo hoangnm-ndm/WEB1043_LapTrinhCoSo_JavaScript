@@ -30,20 +30,24 @@
  *
  * querySelectorAll: Lấy ra tất cả các node thoả mãn selector.
  */
-const bodyElement = document.getElementsByTagName("body")[0];
+// const bodyElement = document.getElementsByTagName("body");
+// const bodyElement = document.getElementById("body");
+// const bodyElement = document.getElementsByClassName("body");
+// const bodyElement = document.querySelector("body#body.body");
+const bodyElement = document.querySelectorAll("body#body.body");
 console.log(bodyElement);
-const h2Element = document.getElementById("lessionTitle");
-console.log(h2Element);
-const myLink = document.querySelector("ol#myList > li.item > a.myLink");
-console.log(myLink);
+// const h2Element = document.getElementById("lessionTitle");
+// console.log(h2Element);
+// const myLink = document.querySelector("ol#myList > li.item > a.myLink");
+// console.log(myLink);
 
 // const listLanguages = document.querySelectorAll("ol > li > a.languageItem");
 // console.log(listLanguages)
 
-const listLanguages = document.querySelector("ol.languagesList");
-console.log(listLanguages);
+// const listLanguages = document.querySelector("ol.languagesList");
+// console.log(listLanguages);
 
-console.log(listLanguages.querySelector(".item2"));
+// console.log(listLanguages.querySelector(".item2"));
 // Slide 5 trang 19
 
 // BTVN: đọc và làm các ví dụ từ trang 19 đến hết trong slide 5

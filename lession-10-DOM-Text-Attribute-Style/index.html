@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Lession 10</h2>
+    <button onclick="changeH2()">Thay doi noi dung cua the H2</button>
+    <button onclick="changeStyleH2()">Thay đổi style cho H2</button>
+    <script>
+      const h2Element = document.querySelectorAll("h2")[0];
+      console.log(h2Element);
+      console.log(h2Element.innerText);
+      console.log(h2Element.innerHTML);
+      // setTimeout(function () {
+      //   h2Element.innerHTML = "Chao cac ban!";
+      // }, 5000);
+
+      function changeH2() {
+        h2Element.innerHTML = "Chao cac ban!";
+      }
+      function changeStyleH2() {
+        h2Element.style.color = "red";
+        h2Element.style.padding = "8px 16px";
+        h2Element.style.backgroundColor = "rgb(0, 255, 0)";
+        h2Element.style.borderRadius = "8px";
+        h2Element.style.border = "2px solid red";
+        h2Element.style.transition = "all ease-in-out 3s";
+      }
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
