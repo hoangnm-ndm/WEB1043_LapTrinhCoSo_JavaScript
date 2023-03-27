@@ -14,3 +14,5 @@ const olElement = document.querySelector("ol.contentList");
 console.log(olElement);
 
 console.log(olElement.getElementsByClassName("item3")[0]);
+
+// Đã học hết slide 5.
