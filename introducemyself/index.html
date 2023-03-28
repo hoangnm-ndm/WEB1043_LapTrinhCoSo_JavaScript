@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giới thiệu bản thân!</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <button onclick="darkMode()">DarkMode</button>
+    <button onclick="addClassDarkMode()">addClassDarkMode</button>
     <h1>Welcome here!!!</h1>
     <h2>My name is HoangNguyen</h2>
     <h2>About</h2>
@@ -32,8 +34,12 @@
     <script>
       const bodyElement = document.getElementsByTagName("body")[0];
       function darkMode() {
-        (bodyElement.style.color = "#ccc"),
-          (bodyElement.style.backgroundColor = "black");
+        bodyElement.style.color = "#ccc";
+        bodyElement.style.backgroundColor = "black";
+      }
+
+      function addClassDarkMode() {
+        bodyElement.classList.add("darkmode");
       }
     </script>
   </body>

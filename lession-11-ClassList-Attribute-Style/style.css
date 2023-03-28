@@ -1,0 +1,7 @@
+h2.styled {
+  background-color: aquamarine;
+  color: red;
+  padding: 10px 20px;
+  border: 1px red solid;
+  border-radius: 8px;
+}

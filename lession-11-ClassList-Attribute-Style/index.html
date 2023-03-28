@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Chao ca lop??!!</h2>
+    <button onclick="styledH2()">Tạo kiểu</button>
+    <button onclick="styledH2remove()">Bỏ tạo kiểu</button>
+    <button onclick="toggleH2()">Toggle</button>
+    <a href="" id="ggLink">Google</a>
+    <script>
+      const h2Element = document.querySelector("h2");
+      function styledH2() {
+        h2Element.classList.add("styled");
+      }
+      function styledH2remove() {
+        h2Element.classList.remove("styled");
+      }
+      function toggleH2() {
+        h2Element.classList.toggle("styled");
+      }
+
+      h2Element.setAttribute("name", "Tên của thẻ h2");
+      h2Element.setAttribute("href", "https://google.com.vn");
+      h2Element.setAttribute("hahaha", "sadsdsdads");
+      console.log(h2Element.getAttribute("name"));
+      h2Element.title = "Tieu de the H2";
+      h2Element.hohoho = "dsdsdsds";
+      console.log({ h2Element });
+
+      // const aElement = document.getElementById("ggLink");
+      // console.log(aElement);
+      // aElement.href = "https://google.com.vn";
+    </script>
+  </body>
+</html>
