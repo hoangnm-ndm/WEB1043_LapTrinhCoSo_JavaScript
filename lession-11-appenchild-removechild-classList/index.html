@@ -18,12 +18,19 @@
     </style>
   </head>
   <body>
+    <ol>
+      <li>Add, remove, create Element</li>
+      <li>Change style</li>
+      <li>ClassList: add, remove, toggle class</li>
+      <li>Hệ thống kiến thức</li>
+    </ol>
     <!-- <button onclick="hello()">Bắt đầu!</button>
     <button onclick="goodbye()">Kết thúc!</button> -->
     <h2>Chao cac ban!</h2>
     <button onclick="changeStyle()">Đổi kiểu cho h2</button>
     <button onclick="changeStyleKieuMoi()">Cách mới</button>
-
+    <button onclick="changeStyleKieuMoiRemove()">Xoá Cách mới</button>
+    <button onclick="toggle()">Change Class</button>
     <script>
       // const bodyElement = document.getElementsByTagName("body")[0];
       // const h2Element = document.createElement("h2");
@@ -49,6 +56,13 @@
 
       function changeStyleKieuMoi() {
         h2Element.classList.add("kieumoi");
+      }
+      function changeStyleKieuMoiRemove() {
+        h2Element.classList.remove("kieumoi");
+      }
+
+      function toggle() {
+        h2Element.classList.toggle("kieumoi");
       }
     </script>
   </body>
