@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+    <h2>Hôm nay là thứ tư!</h2>
+    <button onclick="addElement()">Thêm lời chào</button>
+    <button onclick="removeElement()">Gỡ lời chào</button>
+    <script>
+      const h1Element = document.getElementsByTagName("h1")[0];
+
+      const myBody = document.getElementsByTagName("body")[0];
+      const helloElement = document.createElement("h3");
+      helloElement.innerHTML = "Chao ca lop!";
+
+      const byeElement = document.createElement("h3");
+      byeElement.innerHTML = "Tam biet ca lop!";
+
+      function addElement() {
+        // Cach 1:
+        // myBody.appendChild(helloElement);
+        // if (byeElement) {
+        //   myBody.removeChild(byeElement);
+        // }
+
+        // Cach 2:
+        h1Element.innerHTML = "Xin chao";
+      }
+      function removeElement() {
+        // Cach 1:
+        // if (helloElement) {
+        //   myBody.removeChild(helloElement);
+        // }
+        // myBody.appendChild(byeElement);
+
+        // Cach 2:
+        h1Element.innerHTML = "Tam biet";
+      }
+
+      // document.write("dfdfdfd");
+    </script>
+  </body>
+</html>

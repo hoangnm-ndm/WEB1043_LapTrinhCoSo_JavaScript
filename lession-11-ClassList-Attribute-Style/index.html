@@ -9,10 +9,19 @@
   </head>
   <body>
     <h2>Chao ca lop??!!</h2>
+    <ol>
+      <li>DOM - Text Node</li>
+      <li>DOM - Attribute</li>
+      <li>DOM - ClassList</li>
+      <li>DOM - Style</li>
+    </ol>
     <button onclick="styledH2()">Tạo kiểu</button>
     <button onclick="styledH2remove()">Bỏ tạo kiểu</button>
     <button onclick="toggleH2()">Toggle</button>
     <a href="" id="ggLink">Google</a>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ullam.
+    </p>
     <script>
       const h2Element = document.querySelector("h2");
       function styledH2() {
@@ -27,10 +36,10 @@
 
       h2Element.setAttribute("name", "Tên của thẻ h2");
       h2Element.setAttribute("href", "https://google.com.vn");
-      h2Element.setAttribute("hahaha", "sadsdsdads");
+      h2Element.setAttribute("myAttribute", "attribute custom");
       console.log(h2Element.getAttribute("name"));
       h2Element.title = "Tieu de the H2";
-      h2Element.hohoho = "dsdsdsds";
+      h2Element.myAttribute2 = "custom";
       console.log({ h2Element });
 
       // const aElement = document.getElementById("ggLink");
