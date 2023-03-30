@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lession 11</title>
+    <style>
+      h2.taokieu {
+        color: red;
+        padding: 8px 16px;
+        background-color: rgb(0, 255, 0);
+        border-radius: 8px;
+        border: 2px solid red;
+        transition: all ease-in-out 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Hello world!</h2>
+    <button onclick="changeStyleH2()">Thay đổi style cho H2</button>
+    <button onclick="addClassH2()">Thêm class cho H2</button>
+    <button onclick="removeClassH2()">Gỡ class cho H2</button>
+    <button onclick="toggleClassH2()">Thay đổi class cho H2</button>
+
+    <script>
+      const h2Element = document.getElementsByTagName("h2")[0];
+      // function changeStyleH2() {
+      //   h2Element.style.color = "red";
+      //   h2Element.style.padding = "8px 16px";
+      //   h2Element.style.backgroundColor = "rgb(0, 255, 0)";
+      //   h2Element.style.borderRadius = "8px";
+      //   h2Element.style.border = "2px solid red";
+      //   h2Element.style.transition = "all ease-in-out 2s";
+      // }
+
+      function addClassH2() {
+        h2Element.classList.add("taokieu");
+      }
+
+      function removeClassH2() {
+        h2Element.classList.remove("taokieu");
+      }
+
+      function toggleClassH2() {
+        h2Element.classList.toggle("taokieu");
+      }
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>

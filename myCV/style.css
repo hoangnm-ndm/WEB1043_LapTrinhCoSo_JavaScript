@@ -4,11 +4,23 @@
   margin: 0;
 }
 
+:root {
+  --color-yellow: rgb(255, 242, 0);
+  --color-red: red;
+}
+
 body {
   min-height: 200vh;
   transition: all ease-in-out 2s;
 }
 
+p {
+  color: var(--color-yellow);
+}
+
+h2 {
+  color: var(--color-yellow);
+}
 .darkmode {
   position: fixed;
   top: 20px;
@@ -17,4 +29,15 @@ body {
   border-radius: 8px;
   border: 1px solid gray;
   min-width: 60px;
+}
+
+.darkTheme {
+  background-color: #000;
+  color: #ccc;
+}
+
+.btn-dark {
+  background-color: yellow;
+  color: red;
+  transition: all ease-in-out 2s;
 }
