@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cùng chia tiền nhậu!</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h2>Ăn chơi nhớ chia tiền!!!</h2>
+      <div>
+        <div class="from-group">
+          <label for="songuoi" name="songuoi">Điền số người trong nhóm:</label>
+          <input type="text" name="songuoi" id="songuoi" />
+        </div>
+        <div class="from-group">
+          <label for="sotien" name="sotien">Điền số tiền trong bill</label>
+          <input type="text" name="sotien" id="sotien" />
+        </div>
+        <button class="btn-chiatien" onclick="thanhtoan()">
+          Cùng chia tiền nào!!!
+        </button>
+      </div>
+      <div class="result"></div>
+    </div>
+    <script>
+      function thanhtoan() {
+        let tongThietHai = parseFloat(document.getElementById("sotien").value);
+        console.log(tongThietHai);
+        let soNguoi = parseInt(document.getElementById("songuoi").value);
+        console.log(soNguoi);
+        let tienMoiNguoi = Math.round(tongThietHai / soNguoi);
+        const result = document.querySelector(".result");
+        result.style.display = "block";
+        result.innerHTML = `Mỗi người phải trả số tiền là: ${tienMoiNguoi} đồng`;
+      }
+    </script>
+  </body>
+</html>
