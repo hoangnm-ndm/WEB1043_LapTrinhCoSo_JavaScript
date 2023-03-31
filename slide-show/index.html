@@ -4,7 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="slide-section">
+      <div class="slideShow">
+        <div class="slide">
+          <img
+            src="https://thuthuatphanmem.vn/uploads/2018/05/18/hinh-nen-slide-dep-3_023215415.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://khoinguonsangtao.vn/wp-content/uploads/2022/09/hinh-nen-slide.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://cdn.tgdd.vn/hoi-dap/1369909/200-anh-lam-slide-powerpoint-cuc-dep-chuyen-nghiep-khong%20(5).jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="btn-box">
+        <button class="btn" onclick="preview()">Preview</button>
+        <button class="btn" onclick="next()">Next</button>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
