@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lession 12</title>
+  </head>
+  <body>
+    <h2 class="abc">ABC</h2>
+    <script>
+      const abcElement = document.querySelector(".abc");
+
+      const myBody = document.getElementsByTagName("body")[0];
+      setTimeout(() => {
+        myBody.removeChild(abcElement);
+      }, 3000);
+      const h2NewELement = document.createElement("h2");
+      h2NewELement.innerHTML = "Xin chao cac ban!";
+      console.log(h2NewELement);
+      myBody.appendChild(h2NewELement);
+    </script>
+  </body>
+</html>
