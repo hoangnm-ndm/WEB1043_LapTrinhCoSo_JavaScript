@@ -4,29 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      .box {
-        width: 600px;
-        height: 400px;
-      }
-
-      .box > img {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <title>demo popup</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <button onclick="">Popup</button>
+    <!-- <button onclick="showMe()">Show Me!</button> -->
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, voluptates
+      odio amet autem quam velit modi incidunt beatae repellendus iste similique
+      vitae hic facilis ab. Quae doloribus hic magnam. Eveniet aliquam
+      voluptatibus cum. Officiis pariatur voluptate autem quia, tempora fugiat
+      voluptas illo, deserunt iure repudiandae dolorem? Ab rerum expedita
+      explicabo iusto accusamus. Amet vel nisi nihil, aut laudantium excepturi
+      pariatur totam unde voluptatibus sint, id vero dolores quam repudiandae
+      provident! Id quidem debitis, officia ducimus corrupti mollitia velit
+      quasi ad, neque, cumque sit modi illo illum! Dolorum porro unde molestias
+      vero. Ex esse at deserunt soluta quae consectetur exercitationem. Est
+      vitae dolor eveniet aspernatur labore, explicabo recusandae iure id rem,
+      ut, eum minus atque quas! Perspiciatis aliquid tenetur commodi adipisci
+      accusamus aspernatur blanditiis quas a! Aliquam, aspernatur suscipit.
+      Aspernatur vitae voluptatibus, inventore dolorum ut, totam et est
+      voluptates, at nulla quidem ducimus. Ex quidem nihil ipsam vitae facilis
+      nulla porro dolorem nobis debitis, ab pariatur dolor? Dicta, eveniet et.
+      Consectetur accusamus adipisci, sit dolores commodi reiciendis quam
+      corporis obcaecati esse repellendus animi veritatis mollitia sapiente
+      magnam optio sequi sint possimus hic tempore, quaerat necessitatibus
+      provident ipsum? Cumque mollitia minima officiis velit dolores ad
+      delectus, nulla quas harum, asperiores nihil ipsum?
+    </div>
     <div class="box">
+      <button class="btn-close" onclick="myHidden()">X</button>
       <img
         src="https://i.chungta.vn/2022/06/21/fpoly-1655782316-8753-1655782371.jpg"
         alt=""
       />
     </div>
+    <script>
+      const boxElement = document.querySelector(".box");
+      console.log(boxElement);
+      // function showMe() {
+      //   boxElement.classList.add("show");
+      // }
+      const myTimer = setTimeout(() => {
+        boxElement.classList.add("show");
+      }, 5000);
+      function myHidden() {
+        boxElement.classList.remove("show");
+        clearTimeout(myTimer);
+      }
+    </script>
   </body>
 </html>
