@@ -28,7 +28,15 @@ html {
   transition: all ease-in-out 3s;
 }
 .slide {
+  position: relative;
   display: none;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .btn-box {
   width: 200px;
