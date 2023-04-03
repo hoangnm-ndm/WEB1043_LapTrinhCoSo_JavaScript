@@ -10,7 +10,7 @@
   <body>
     <section class="slide-section">
       <div class="slideShow">
-        <div class="slide">
+        <div class="slide fade">
           <img
             src="https://thuthuatphanmem.vn/uploads/2018/05/18/hinh-nen-slide-dep-3_023215415.jpeg"
             alt=""
@@ -19,7 +19,7 @@
             <h2>Chúa tể HTML</h2>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide fade">
           <img
             src="https://khoinguonsangtao.vn/wp-content/uploads/2022/09/hinh-nen-slide.jpg"
             alt=""
@@ -28,7 +28,7 @@
             <h2>Kẻ huỷ diệt CSS</h2>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide fade">
           <img
             src="https://cdn.tgdd.vn/hoi-dap/1369909/200-anh-lam-slide-powerpoint-cuc-dep-chuyen-nghiep-khong%20(5).jpg"
             alt=""
@@ -40,7 +40,11 @@
       </div>
       <div class="btn-box">
         <button class="btn" onclick="preview()">Preview</button>
+        <!-- <button class="btn" onclick="actionSlide(-1)">Preview</button> -->
+        <button class="btn" onclick="play()">Play</button>
+        <button class="btn" onclick="pause()">Pause</button>
         <button class="btn" onclick="next()">Next</button>
+        <!-- <button class="btn" onclick="actionSlide(1)">Next</button> -->
       </div>
     </section>
 

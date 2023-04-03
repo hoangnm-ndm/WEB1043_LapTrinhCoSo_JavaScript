@@ -1,6 +1,5 @@
 let currentIndex = 0;
 const slideList = document.getElementsByClassName("slide");
-console.log(slideList);
 slideList[currentIndex].style.display = "block";
 
 function preview() {
@@ -27,3 +26,13 @@ function next() {
   }
   slideList[currentIndex].style.display = "block";
 }
+
+// function actionSlide() {}
+
+// function play() {
+//   const showInterval = setInterval(next, 3000);
+// }
+
+// function pause() {
+//   clearInterval(next);
+// }
