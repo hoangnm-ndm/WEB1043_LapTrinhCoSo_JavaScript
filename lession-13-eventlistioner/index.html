@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lession 13</title>
+  </head>
+  <body>
+    <!-- Khai báo sự kiện như một attribute trong HTML -->
+    <button class="btn" onclick="myFunc()">Click Me!!!</button>
+
+    <!-- Cách 2: Gắn attribute "onclick" bằng Javascript -->
+    <button class="btn2">Click Me - 2!!!</button>
+
+    <!-- Cách 3: Tạo ra sự kiện bằng key: addEventListener -->
+    <button class="btn3">Click Me - 3!!!</button>
+
+    <script>
+      function myFunc() {
+        console.log("aaaaa");
+      }
+
+      const btnElement = document.querySelector(".btn");
+      const btnElement2 = document.querySelector(".btn2");
+      const btnElement3 = document.querySelector(".btn3");
+
+      // Cach 2:Gắn attribute "onclick" bằng Javascript
+      btnElement2.onclick = myFunc;
+
+      // Cach 3:Tạo ra sự kiện bằng key: addEventListener
+      btnElement3.addEventListener("click", myFunc);
+    </script>
+  </body>
+</html>
