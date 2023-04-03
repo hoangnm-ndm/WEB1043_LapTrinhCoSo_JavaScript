@@ -13,7 +13,6 @@
     <button class="btn-magic-3">Magic 3</button>
     <h2 class="welcome">
       Chao cac ban!
-
       <p>sdsdsdsd</p>
       <ol>
         <li>item 1</li>
@@ -35,9 +34,7 @@
       }
 
       // Cach2: Chỉ định sự kiện bằng JS
-      btn2Element.onclick = function () {
-        magic();
-      };
+      btn2Element.onclick = magic;
 
       // Cách 3: Chỉ định sự kiện bằng key: addEventListener
       btn3Element.addEventListener("click", magic);
