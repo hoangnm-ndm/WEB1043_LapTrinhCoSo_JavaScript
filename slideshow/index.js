@@ -31,9 +31,6 @@ var myShow = setInterval(next, 3000);
 // Buoc 4: Tao ra tinh nang pause/play
 
 const pauseElement = document.getElementById("pause");
-
-console.log(pauseElement);
-
 var myStatus = true;
 
 function pauseShow() {
@@ -44,11 +41,11 @@ function pauseShow() {
 function playShow() {
   pauseElement.innerText = "Pause";
   myStatus = true;
-  setInterval(next, 3000);
+  var myShow = setInterval(next, 3000);
 }
 
 pauseElement.onclick = function () {
-  if (!myStatus) {
+  if (myStatus === true) {
     pauseShow();
   } else {
     playShow();
