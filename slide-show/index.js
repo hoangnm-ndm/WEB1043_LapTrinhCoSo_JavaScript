@@ -3,9 +3,6 @@ const slideList = document.getElementsByClassName("slide");
 slideList[currentIndex].style.display = "block";
 
 function preview() {
-  // for (let i = 0; i < slideList.length; i++) {
-  //   slideList[i].style.display = "none";
-  // }
   slideList[currentIndex].style.display = "none";
 
   currentIndex--;
@@ -15,9 +12,6 @@ function preview() {
   slideList[currentIndex].style.display = "block";
 }
 function next() {
-  // for (let i = 0; i < slideList.length; i++) {
-  //   slideList[i].style.display = "none";
-  // }
   slideList[currentIndex].style.display = "none";
 
   currentIndex++;
@@ -27,12 +21,26 @@ function next() {
   slideList[currentIndex].style.display = "block";
 }
 
-// function actionSlide() {}
+var playing = true;
+var pauseButton = document.getElementById("pause");
+var slideInterval = setInterval(next, 2000);
 
-// function play() {
-//   const showInterval = setInterval(next, 3000);
-// }
+function pauseSlideshow() {
+  pauseButton.innerHTML = "Play";
+  playing = false;
+  clearInterval(slideInterval);
+}
 
-// function pause() {
-//   clearInterval(next);
-// }
+function playSlideshow() {
+  pauseButton.innerHTML = "Pause";
+  playing = true;
+  slideInterval = setInterval(next, 2000);
+}
+
+pauseButton.onclick = function () {
+  if (playing) {
+    pauseSlideshow();
+  } else {
+    playSlideshow();
+  }
+};

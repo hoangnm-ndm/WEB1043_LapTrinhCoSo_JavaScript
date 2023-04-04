@@ -32,7 +32,7 @@ html {
   transition: all ease 1s;
 }
 
-@keyframes fader {
+/* @keyframes fader {
   from {
     opacity: 1;
   }
@@ -43,10 +43,10 @@ html {
 
 .fade {
   animation-name: fader;
-  animation-delay: 2s;
+  animation-delay: 0s;
   animation-duration: 1s;
   z-index: 20;
-}
+} */
 
 .content {
   position: absolute;
