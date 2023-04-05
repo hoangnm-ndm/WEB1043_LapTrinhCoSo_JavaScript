@@ -8,28 +8,30 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form>
+    <div class="form">
       <h2>Đăng ký tài khoản!!!</h2>
       <div class="form-group">
-        <label for="username" name="username">Tài khoản:</label>
-        <input type="text" placeholder="User name" />
+        <label for="username">Tài khoản:</label>
+        <input type="text" id="username" placeholder="User name" />
       </div>
 
       <div class="form-group">
-        <label for="email" name="email">Email:</label>
-        <input type="email" placeholder="Email" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email" />
       </div>
 
       <div class="form-group">
-        <label for="password" name="password">Password:</label>
-        <input type="password" placeholder="Password" />
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Password" />
       </div>
       <div class="form-group">
         <button class="btn-submit" type="submit" onclick="send()">Send</button>
       </div>
-    </form>
-    <script>
-      function send() {}
-    </script>
+      <div id="valid">
+        <p id="validUsername" class="valid"></p>
+        <p id="validPassword" class="valid"></p>
+      </div>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>

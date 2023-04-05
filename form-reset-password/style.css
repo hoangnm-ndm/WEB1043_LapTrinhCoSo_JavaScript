@@ -59,7 +59,3 @@ input,
 .btn-submit:hover {
   background-color: rgba(0, 0, 255, 0.6);
 }
-
-.valid {
-  color: red;
-}
