@@ -4,6 +4,12 @@
  * 3. Sau khi kiem tra xong thi lay thong tin cua nguoi dung luu vao trong object user = {}
  */
 
+// Ngăn chặn hành vi submit mặc định của form
+const formElement = document.getElementsByTagName("form")[0];
+formElement.onclick = function (event) {
+  event.preventDefault();
+};
+
 // B1: Lay ra nhung node can thiet:
 const usernameElement = document.getElementById("username");
 const emailElement = document.getElementById("email");

@@ -12,7 +12,8 @@ body {
   background-color: rgb(246, 245, 244);
 }
 
-.form {
+.form,
+form {
   width: 400px;
   height: auto;
   margin: 100px auto 0;
