@@ -9,7 +9,7 @@ html {
   font-weight: 400;
 }
 
-form {
+.form {
   margin: 0 auto;
   width: 400px;
   height: auto;
@@ -54,4 +54,10 @@ input {
 
 .btn-submit:hover {
   background-color: rgba(0, 0, 255, 0.6);
+}
+
+.valid {
+  width: 100%;
+  color: red;
+  padding-top: 4px;
 }
