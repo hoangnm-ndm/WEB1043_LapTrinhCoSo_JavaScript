@@ -8,28 +8,32 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form class="form">
+    <form id="form" class="form" action="./action.html" method="POST">
       <h2>Đổi mật khẩu!!!</h2>
       <div class="form-group">
-        <label for="password" id="passwordOld">Password cũ:</label>
-        <input type="password" placeholder="Password" />
+        <label for="password">Password cũ:</label>
+        <input type="password" id="passwordOld" placeholder="Password" />
       </div>
 
       <div class="form-group">
-        <label for="password" id="passwordNew">Password mới:</label>
-        <input type="password" placeholder="Password" />
+        <label for="password">Password mới:</label>
+        <input type="password" id="passwordNew" placeholder="Password" />
       </div>
 
       <div class="form-group">
-        <label for="password" id="passwordConfirm">Gõ lại mật khẩu mới:</label>
-        <input type="password" placeholder="Password" />
+        <label for="password">Gõ lại mật khẩu mới:</label>
+        <input type="password" id="passwordConfirm" placeholder="Password" />
       </div>
       <div class="form-group">
         <button class="btn-submit" type="submit" onclick="send()">Send</button>
       </div>
+      <div class="valid">
+        <div id="valid-oldpass"></div>
+        <div id="valid-newpass"></div>
+        <div id="valid-confirmpass"></div>
+      </div>
     </form>
-    <script>
-      function send() {}
-    </script>
+    <script src="./index.js"></script>
+    >
   </body>
 </html>
