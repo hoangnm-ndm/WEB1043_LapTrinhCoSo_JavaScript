@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h2>Vui lòng chọn số lượng và ấn thanh toán!</h2>
+      <div class="product-item">
+        <strong class="product-name">Ten san pham</strong>
+        <strong>Gia Tien</strong>
+        <strong>So Luong</strong>
+        <strong>Thanh Tien</strong>
+      </div>
+      <div class="product-item">
+        <div class="product-name">San pham A</div>
+        <input type="text" class="gia1" value="400" />
+        <input type="number" class="soluong" id="soluong1" />
+        <div class="thanhtien" id="thanhtien1">0</div>
+      </div>
+      <div class="product-item">
+        <div class="product-name">San pham B</div>
+        <input type="text" class="gia2" value="500" />
+        <input type="number" class="soluong" id="soluong2" />
+        <div class="thanhtien" id="thanhtien2">0</div>
+      </div>
+      <div class="product-item">
+        <div class="product-name">San pham C</div>
+        <input type="text" class="gia3" value="600" />
+        <input type="number" class="soluong" id="soluong3" />
+        <div class="thanhtien" id="thanhtien3">0</div>
+      </div>
+      <div class="tong">Tổng: <span id="result">0</span> VND</div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
