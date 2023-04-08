@@ -1,3 +1,5 @@
+"use strict";
+
 const myForm = document.getElementById("register");
 
 myForm.onclick = function (event) {
