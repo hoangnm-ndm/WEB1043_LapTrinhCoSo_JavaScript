@@ -4,42 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thanh Toan</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <style>
+      th,
+      td {
+        border: 1px solid #bbb;
+      }
+    </style>
   </head>
   <body>
-    <div class="box-cart">
-      <div class="cart-item strong">Tên sản phẩm</div>
-      <div class="cart-item strong">Giá</div>
-      <div class="cart-item strong">Số lượng</div>
-      <div class="cart-item strong">Thành tiền</div>
-      <div class="cart-item">Sản phẩm A</div>
-      <div class="cart-item">200</div>
-      <div class="cart-item">
-        <input type="number" id="quanlity" />
-      </div>
-      <div class="cart-item">0</div>
-      <div class="cart-item">Sản phẩm B</div>
-      <div class="cart-item">300</div>
-      <div class="cart-item">
-        <input type="number" id="quanlity" />
-      </div>
-      <div class="cart-item">0</div>
-      <div class="cart-item">Sản phẩm C</div>
-      <div class="cart-item">400</div>
-      <div class="cart-item">
-        <input type="number" id="quanlity" />
-      </div>
-      <div class="cart-item">0</div>
-      <div class="cart-item">Sản phẩm D</div>
-      <div class="cart-item">500</div>
-      <div class="cart-item">
-        <input type="number" id="quanlity" />
-      </div>
-      <div class="cart-item">0</div>
-      <div class="cart-item with-2">
-        Tổng tiền: <span class="result">0</span>
-      </div>
-    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Sản phẩm</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Thành tiền</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sản phẩm 1</td>
+          <td id="price1">200</td>
+          <td>
+            <input type="number" id="quantity1" value="0" />
+          </td>
+          <td id="total1">0</td>
+        </tr>
+        <tr>
+          <td>Sản phẩm 2</td>
+          <td id="price2">300</td>
+          <td>
+            <input type="number" id="quantity2" value="0" />
+          </td>
+          <td id="total2">0</td>
+        </tr>
+        <tr>
+          <td>Sản phẩm 3</td>
+          <td id="price3">400</td>
+          <td>
+            <input type="number" id="quantity3" value="0" />
+          </td>
+          <td id="total3">0</td>
+        </tr>
+        <tr>
+          <td colspan="3">Tổng cộng:</td>
+          <td id="grandTotal">0</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="./index.js"></script>
   </body>
 </html>

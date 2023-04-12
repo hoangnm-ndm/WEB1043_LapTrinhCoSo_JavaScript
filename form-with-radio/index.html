@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="myForm">
+      <label for="">Giới tính: </label>
+      <label for=""><input type="radio" name="myRadio" />Nam</label>
+      <label for=""><input type="radio" name="myRadio" />Nữ</label>
+      <label for=""><input type="radio" name="myRadio" />Orther</label>
+      <button onclick="myValid()">Send</button>
+    </form>
+    <script>
+      const radioElements = document.getElementsByName("myRadio");
+      console.log(radioElements);
+
+      function myValid() {
+        let isChecked = false;
+        for (let i = 0; i < radioElements.length; i++) {
+          if (radioElements[i].checked) {
+            isChecked = true;
+            break;
+          }
+        }
+        if (!isChecked) {
+          alert("Vui lòng chọn giới tính!");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
