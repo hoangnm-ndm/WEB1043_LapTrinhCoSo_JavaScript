@@ -1,5 +1,6 @@
 function validateForm() {
   // Lấy tất cả các mục radio button trong form
+
   const radios = document.getElementsByName("myRadio");
 
   // Lặp qua tất cả các mục và kiểm tra xem có mục nào được chọn hay không
